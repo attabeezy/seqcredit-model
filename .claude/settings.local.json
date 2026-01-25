@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(python:*)",
+      "Bash(for:*)",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(then echo \"[OK] $file\")",
+      "Bash(else echo \"[MISSING] $file\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nComplete project restructuring \\(phases 6-10\\)\n\n- Update internal references in README.md, SESSION_LOG.md, and docs\n- Fix Colab badge links to point to notebooks/ directory\n- Update file paths in Python scripts to use relative paths\n- Add __init__.py files to src/ packages for cleaner imports\n- Update .gitignore with nested __pycache__ patterns\n- Add ctgan_syn_data_gen.ipynb to README notebook list\n- Update repository structure documentation\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git merge:*)"
+    ]
+  }
+}
